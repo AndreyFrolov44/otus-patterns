@@ -3,7 +3,6 @@ name = "otus"
 version = "0.0.1"
 description = ""
 authors = ["a.frolov <a.frolov@bi.zone>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
