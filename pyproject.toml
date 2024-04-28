@@ -7,8 +7,12 @@ authors = ["a.frolov <a.frolov@bi.zone>"]
 [tool.poetry.dependencies]
 python = "^3.11"
 pytest = "^8.1.1"
+pytest-mock = "^3.14.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
