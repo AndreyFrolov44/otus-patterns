@@ -1,6 +1,6 @@
 import pytest
 
-from home_work_1.main import solve
+from homework_1.main import solve
 
 
 @pytest.mark.parametrize(
