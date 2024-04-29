@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+from homework_2.command import Command
 from homework_2.vector import Vector
 
 
@@ -15,7 +16,7 @@ class Movable:
 
 
 @dataclass
-class Move:
+class Move(Command):
     _movable: Movable
 
     def execute(self) -> None:
