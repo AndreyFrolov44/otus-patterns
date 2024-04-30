@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
 from homework_2.angle import Angle
+from homework_2.command import Command
 
 
 class Rotatable:
@@ -15,7 +16,7 @@ class Rotatable:
 
 
 @dataclass
-class Rotate:
+class Rotate(Command):
     _rotatable: Rotatable
 
     def execute(self) -> None:
