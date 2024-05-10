@@ -14,6 +14,9 @@ class Movable:
     def get_velocity(self) -> Vector:
         raise NotImplementedError()
 
+    def set_velocity(self, velocity: Vector) -> None:
+        raise NotImplementedError()
+
 
 @dataclass
 class Move(Command):
@@ -36,3 +39,6 @@ class MovableObject(Movable):
 
     def set_position(self, position: Vector) -> None:
         self.position = position
+
+    def set_velocity(self, velocity: Vector) -> None:
+        self.velocity = velocity
